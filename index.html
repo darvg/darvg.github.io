@@ -1,78 +1,266 @@
-<HTML>
-
-<HEAD>
-<TITLE>Siddharth Gollapudi</TITLE>
-
-<style type="text/css">
-	a{text-decoration:none;}
-	a:visited{color:#0E7F4D;}
-	a:link{color:#0E547F;}
-	a:hover{text-decoration:underline;}
-	p.ex
-	{height:auto; 
-	width:500px;
-	text-align:justify;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./berkeley_seal.png">
+  <title>Siddharth Gollapudi</title>
+  <style>
+    :root {
+      --primary-color: #0E547F;
+      --secondary-color: #0E7F4D;
+      --text-color: #333;
+      --background-color: #FEF9F6;
+      --light-bg: #f8f9fa;
+      --border-color: #ddd;
     }
-    .alignleft { float: left; }
-    .alignright { float: right; }
-    hr
-    { width:800px; }
-	body
-	{
-	text-align:justify;
-	line-height: 1.5;
-	padding: 4em 1em;
-	width:800px;
-	margin-left:auto;
-	margin-right:auto;
-	font-size:1.15em;
-	font-family: "Arial Unicode MS", "Times New Roman", "Gargi";
-	}
-</style>
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--background-color);
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      font-size: 1rem;
+    }
+    
+    .main-content {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .text-column {
+      flex: 1;
+    }
+    
+    header {
+      margin-bottom: 1.5rem;
+    }
+    
+    .profile-image {
+      max-width: 320px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      height: auto;
+    }
+    
+    .image-container {
+      align-self: flex-start;
+      position: sticky;
+      top: 1rem;
+    }
+    
+    .bio-container {
+      margin-bottom: 1.5rem;
+    }
+    
+    .bio-text {
+      text-align: justify;
+      line-height: 1.7;
+    }
+    
+    h1 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
+    
+    h2 {
+      color: var(--primary-color);
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border-color);
+      font-size: 1.75rem;
+    }
+    
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    
+    a:visited {
+      color: var(--secondary-color);
+    }
+    
+    a:hover {
+      text-decoration: underline;
+      color: #0a3f5f;
+    }
+    
+    .contact-info {
+      margin-bottom: 1rem;
+    }
+    
+    .bio {
+      margin: 1.5rem 0;
+      text-align: justify;
+      line-height: 1.7;
+    }
+    
+    .paper {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .paper:last-child {
+      border-bottom: none;
+    }
+    
+    .paper-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+    }
+    
+    .paper-authors {
+      font-style: italic;
+      margin-bottom: 0.25rem;
+    }
+    
+    .paper-venue {
+      margin-top: 0.25rem;
+    }
+    
+    .highlight {
+      background-color: #f0f7ff;
+      display: inline-block;
+      padding: 0 0.25rem;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+    
+    .service, .teaching {
+      margin-bottom: 1rem;
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column-reverse;
+      }
+      
+      .header-content {
+        margin-top: 1rem;
+      }
+      
+      .profile-image {
+        max-width: 100%;
+      }
+      
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-content">
+    <div class="text-column">
+      <header>
+        <h1>Siddharth Gollapudi</h1>
+        <div class="contact-info">
+          Contact: sgollapu AT berkeley DOT edu<br>
+          <a href="resume_siddharthg.pdf" target="_blank" rel="noopener noreferrer">My CV.</a>
+        </div>
+      </header>
 
+      <section class="bio-container">
+        <div class="bio-text">
+          <p>
+            I am an incoming PhD student at UC Berkeley, supported in part by an
+            <a href="https://www.nsf.gov/cise/graduate-fellowships" target="_blank" rel="noopener noreferrer">NSF CISE Graduate Fellowship</a>. Before this, I was a pre-doctoral Research Fellow at Microsoft Research India, where I was incredibly fortunate to be advised by 
+            <a href="https://rakri.github.io/" target="_blank" rel="noopener noreferrer">Ravishankar Krishnaswamy</a>, and to work with 
+            <a href="https://sandeepsilwal.com/" target="_blank" rel="noopener noreferrer">Sandeep Silwal</a> and 
+            <a href="https://www.mit.edu/~mahabadi/" target="_blank" rel="noopener noreferrer">Sepideh Mahabadi</a>. I received my BA in math and computer science from UC Berkeley. It all started in Cupertino, California, where
+            <a href="https://www.linkedin.com/in/d-sivakumar-858ba964/" target="_blank" rel="noopener noreferrer">D. Sivakumar</a> inspired me to pursue a career in research.
+          </p>
+          <br>
+          <p>
+            I am broadly interested in algorithms for large datasets, but my recent interests have been in approximation algorithms and machine learning for information retrieval, especially in the context of the current AI/ML landscape.
+          </p>
+        </div>
+      </section>
+    </div>
+    
+    <div class="image-container">
+      <img class="profile-image" src="IMG_0268 Copy.jpg" alt="Siddharth Gollapudi">
+    </div>
+  </div>
 
-<style type="text/css"></style></head><body><body>
-<img style="float:right" width="300" src="IMG_0268 Copy.jpg" hspace="30px">
-<h1 style="margin-bottom:2mm">Siddharth Gollapudi</h1>
+  <section>
+    <h2>Papers</h2>
+    <div class="paper">
+      <div class="paper-title">
+          &alpha;-Reachable Graphs for Multi-vector Nearest Neighbor Search
+         <!-- <a href="https://arxiv.org/abs/2505.23967" target="_blank" rel="noopener noreferrer">[arXiv]</a> -->
+      </div>
+      <div class="paper-authors">Siddharth Gollapudi, Ravishankar Krishnaswamy, Ben Landrum, Nikhil Rao, Kirankumar Shiragur, Sandeep Silwal, Harsh Wardhan</div>
+      <div class="paper-venue">to appear, <a href="https://vecdb-ws.github.io/icml2025/index.html" target="_blank" rel="noopener noreferrer">VecDB@ICML 2025</a></div>
+    </div>
 
-Contact: sgollapu AT berkeley DOT edu <br/>
-My <a href="resume_siddharthg.pdf" target="_blank" rel="noopener noreferrer">CV</a>.
+    <div class="paper">
+      <div class="paper-title">
+        Sort Before You Prune: Improved Worst-Case Analysis for DiskANN Graphs
+        <!-- <a href="https://openreview.net/pdf?id=JnXbUKtLzz" target="_blank" rel="noopener noreferrer">[paper]</a> -->
+      </div>
+      <div class="paper-authors">Siddharth Gollapudi, Ravishankar Krishnaswamy, Kiran Shiragur, Harsh Wardhan</div>
+      <div class="paper-venue">to appear, ICML 2025</div>
+    </div>
 
-<p style="margin-top:1.2cm">
-  I am currently a pre-doctoral researcher at Microsoft Research India, where I am fortunate to be advised by <a href="https://rakri.github.io/" target="_blank" rel="noopener noreferrer">Ravishankar Krishnaswamy</a>. Before this, I received my BA in math and computer science from UC Berkeley.
-</p>
-<p style="margin-bottom:1cm; margin-top:8mm">
-I am broadly interested in algorithms, but my primary focus at Microsoft has been in approximation algorithms for big data. Currently, I'm looking at fast algorithms for the approximate nearest neighbors problem.
+    <div class="paper">
+      <div class="paper-title">
+        Improved Approximations for Hard Graph Problems using Predictions
+         <a href="https://arxiv.org/abs/2505.23967" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      </div>
+      <div class="paper-authors">Anders Aamand, Justin Y. Chen, Siddharth Gollapudi, Sandeep Silwal, Hao Wu</div>
+      <div class="paper-venue">to appear, ICML 2025</div>
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        Learning-Augmented Frequent Directions
+        <a href="https://arxiv.org/abs/2503.00937" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      </div>
+      <div class="paper-authors">Anders Aamand, Justin Y. Chen, Siddharth Gollapudi, Sandeep Silwal, Hao Wu</div>
+      <div class="paper-venue">ICLR 2025 <span class="highlight">Spotlight Award</span></div>
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        Improved Approximation Algorithms for the Joint Replenishment Problem with Outliers, and with Fairness Constraints
+        <a href="https://arxiv.org/abs/2308.04846" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      </div>
+      <div class="paper-authors">Varun Suriyanarayana, Varun Sivashankar, Siddharth Gollapudi, David Shmoys</div>
+      <div class="paper-venue">SODA 2024</div>
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        Composable Coresets for Determinant Maximization: Greedy is Almost Optimal
+        <a href="https://arxiv.org/abs/2309.15286" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+      </div>
+      <div class="paper-authors">Siddharth Gollapudi, Sepideh Mahabadi and Varun Sivashankar</div>
+      <div class="paper-venue">NeurIPS 2023</div>
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        Filtered−DiskANN: Graph Algorithms for Approximate Nearest Neighbor Search with Filters
+        <a href="https://harsha-simhadri.org/pubs/Filtered-DiskANN23.pdf" target="_blank" rel="noopener noreferrer">[paper]</a>
+      </div>
+      <div class="paper-authors">Siddharth Gollapudi, Neel Karia, Varun Sivashankar, Ravishankar Krishnaswamy, Harsha Vardhan Simhadri, Nikit Begwani, Swapnil Raz, Yiyong Lin, Yin Zhang, Neelam Mahapatro, Premkumar Srinivasan and Amit Singh</div>
+      <div class="paper-venue">WWW 2023</div>
+    </div>
+  </section>
 
-</p>
-
-
-<h2>Papers</h2>
-
-<strong>Improved Approximation Algorithms for the Joint Replenishment Problem with Outliers, and with Fairness Constraints</strong> <a href="https://arxiv.org/abs/2308.04846" target="_blank" rel="noopener noreferrer">[arXiv]</a>
-<p style="margin-bottom:1cm; margin-left:0cm; margin-top:1mm">
-<i>Varun Suriyanarayana, Varun Sivashankar, Siddharth Gollapudi, David Shmoys</i><br/>
-SODA 2024 (35th Annual ACM-SIAM Symposium on Discrete Algorithms)
-</p>
-<strong>Composable Coresets for Determinant Maximization: Greedy is Almost Optimal</strong> <a href="https://arxiv.org/abs/2309.15286" target="_blank" rel="noopener noreferrer">[arXiv]</a>
-<p style="margin-bottom:1cm; margin-left:0cm; margin-top:1mm">
-<i>Siddharth Gollapudi, Sepideh Mahabadi and Varun Sivashankar</i><br/>
-NeurIPS 2023 (37th Annual Conference on Neural Information Processing Systems)
-</p>
-<strong>Filtered−DiskANN: Graph Algorithms for Approximate Nearest Neighbor Search with Filters</strong> <a href="https://harsha-simhadri.org/pubs/Filtered-DiskANN23.pdf" target="_blank" rel="noopener noreferrer">[paper]</a>
-<p style="margin-bottom:1cm; margin-left:0cm; margin-top:1mm">
-<i>Siddharth Gollapudi, Neel Karia, Varun Sivashankar, Ravishankar Krishnaswamy, Harsha Vardhan Simhadri, Nikit Begwani, Swapnil Raz, Yiyong Lin, Yin Zhang, Neelam Mahapatro, Premkumar Srinivasan and Amit Singh</i><br/>
-The ACM Web Conference (formerly WWW) 2023
-</p>
-
-<h2>Service</h2>
-<i>Subreviewer: SODA 2024, ESA 2022</i>
-
-<h2>Teaching Experience</h2>
-<i>FIRST Robotics Team #299: Valkyrie Robotics</i> 
-<p style="margin-left:0cm; margin-top:1mm">
-Team Mentor
-
-
-</BODY>
-</HTML>
+</body>
+</html>
